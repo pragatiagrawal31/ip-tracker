@@ -2,7 +2,7 @@ const secret_api ='at_QTN5G3lCt6hf1LkTDGZUutpXPoLHo'
 const api_uri = 'https://geo.ipify.org/api/'
 let current_verion = 'v1'
 
-// elements to update
+// elements to be updated
 let current_ip = document.getElementById('current_ip')
 let current_town = document.getElementById('current_town')
 let current_zone = document.getElementById('current_zone')
@@ -49,7 +49,6 @@ async function fetchDetails(default_ip)
         updateMarker([data.location.lat, data.location.lng])
     }
     catch(error){
-        fetchDetails();
         alert("Unable to get IP details")
         console.log(error)
     }
