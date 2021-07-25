@@ -13,6 +13,7 @@
    <title>IP Address Tracker</title>
 </head>
 <body>
+    <div id="sawo-container" style="height: 300px; width: 300px;"></div>
     <div class="app-container">
         <div class="form-container">
             <h1 class="title">IP Address Tracker</h1>
@@ -49,6 +50,23 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+        var config = {
+            // should be same as the id of the container created on 3rd step
+            containerID: "sawo-container",
+            // can be one of 'email' or 'phone_number_sms'
+            identifierType: "email",
+            // Add the API key copied from 2nd step
+            apiKey: "9aaff77e-c3dc-48d1-b94c-0fcbba7f17dc",
+            // Add a callback here to handle the payload sent by sdk
+            onSuccess: (payload) => {
+                console.log(payload)
+            },
+        };
+        var sawo = new Sawo(config);
+        sawo.showForm();
+    </script>
     <script src="/script/script.js"></script>
 </body>
 </html>

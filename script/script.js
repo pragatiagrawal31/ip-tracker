@@ -53,7 +53,7 @@ getIPDetails = (default_ip) => {
     })
 }
 
-document.addEventListener('load', updateMarker())
+document.addEventListener('load', getIPDetails)
 
 search_btn.addEventListener('click', e => {
     e.preventDefault()
