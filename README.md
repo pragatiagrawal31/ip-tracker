@@ -22,7 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/pragatiagrawal31/ip-tracker/blob/master/images/screenshot.png)
+![](https://github.com/pragatiagrawal31/ip-tracker/blob/master/images/screenshot1.png)
+![](https://github.com/pragatiagrawal31/ip-tracker/blob/master/images/screenshot2.png)
 
 ### Links
 
@@ -40,11 +41,12 @@ Users should be able to:
   Tried deploying on heroku, but since I made a static site according to the need of integrating API's ( didn't used js framework, instead used, vanilla js), so for deploying on Heroku, either my site had to had some backend, which could have been done using PHP as in - middleware approach was to create a blank `composer.json` file and also create a php file that includes our main `index.html` file and then deploy on Heroku using PHP as the build framework.
 - I tried keeping files clean, and not just add .php file for deploying and hence deployed on Netlify (as it deploys only static files too)
 - Went ahead for Sawo's API integration and have tried everything I could think and tried and debug to integrate it with vanilla js, HTML, CSS project I made, but to no use. Started learning Vue Js framework for integrating Sawo API and then move ahead with moving the current IP tracker project to Vue too, and then use a router to redirect after Sawo authentication to this IP Tracker project component in Vue
+- Using Sawo's example integration for Vue, went ahead and integrated its API for a sample Vue page as given in example tutorial, but then could not implemnt this IP tracker in Vue framework, and the router for connecting 2 pages could not be configured nor the use of composition API needed to made the IP tracker App.
+- Finally this project for now, consists of only IP Address Tracker application and no Sawo API integration.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Vanilla js
