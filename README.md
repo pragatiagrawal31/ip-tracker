@@ -38,7 +38,7 @@ Users should be able to:
 - Locally run and tested the IP Tracker app, works fine. Initiallly had harcoded current IP details in HTML, later modified function to show user's IP addred by default on loading.. works fine
 - Made new git public repository, set it's remote and hosted the code at Github
   Tried deploying on heroku, but since I made a static site according to the need of integrating API's ( didn't used js framework, instead used, vanilla js), so for deploying on Heroku, either my site had to had some backend, which could have been done using PHP as in - middleware approach was to create a blank `composer.json` file and also create a php file that includes our main `index.html` file and then deploy on Heroku using PHP as the build framework.
-- I tried keeping files clean, and not just add .php file for deploying and hence deployed on Netlify (as it deploys only statis files too)
+- I tried keeping files clean, and not just add .php file for deploying and hence deployed on Netlify (as it deploys only static files too)
 - Went ahead for Sawo's API integration and have tried everything I could think and tried and debug to integrate it with vanilla js, HTML, CSS project I made, but to no use. Started learning Vue Js framework for integrating Sawo API and then move ahead with moving the current IP tracker project to Vue too, and then use a router to redirect after Sawo authentication to this IP Tracker project component in Vue
 
 ### Built with
