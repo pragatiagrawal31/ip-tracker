@@ -13,8 +13,7 @@
 
 Users should be able to:
 
-<!-- - Login using SAWO sdk (the passwordless way) -->
-
+- Login using SAWO sdk (the passwordless way)
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements on the page
 - See their own IP address on the map on the initial page load
@@ -28,6 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/pragatiagrawal31/ip-tracker)
+
 - Live Site URL: [Add live site URL here](https://tracking-ipaddress.netlify.app/)
 
 ## My process
