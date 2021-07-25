@@ -1,4 +1,3 @@
-// pull from different file
 const secret_api ='at_QTN5G3lCt6hf1LkTDGZUutpXPoLHo'
 const api_uri = 'https://geo.ipify.org/api/'
 let current_verion = 'v1'
@@ -24,7 +23,7 @@ const map = L.map('display-map', {
     ]
 })
 
-updateMarker = (update_marker = [-33.665, 18.993]) => {
+updateMarker = (update_marker) => {
     map.setView(update_marker, 13);
     L.marker(update_marker).addTo(map);
 }
